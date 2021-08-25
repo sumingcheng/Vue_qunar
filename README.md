@@ -1,12 +1,21 @@
-# Vue_qunar
+# travel
 
-qunar
+> A Vue.js project
 
-## 技术使用
+## Build Setup
 
-Vuex Vue Router axios
+``` bash
+# install dependencies
+npm install
 
-## 项目搭建详细内容
+# serve with hot reload at localhost:8080
+npm run dev
 
-https://www.yuque.com/sumingcheng/eqx547
+# build for production with minification
+npm run build
 
+# build for production and view the bundle analyzer report
+npm run build --report
+```
+
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
