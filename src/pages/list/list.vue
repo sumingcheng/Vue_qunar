@@ -6,7 +6,7 @@
 
 <script>
   export default {
-    name: "listlistlist",
+    name: "标注一个名字",
     data() {
       return {
         msg: "listlistlist",
