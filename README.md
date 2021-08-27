@@ -1,4 +1,4 @@
-# 项目博客地址
+# 项目文章地址
 
 > https://www.yuque.com/sumingcheng/eqx547
 
