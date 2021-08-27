@@ -16,7 +16,6 @@
     </div>
   </div>
 </template>
-
 <script>
 export default {
   name: "Home-Header",
@@ -24,12 +23,14 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+@import '~styles/variables.styl'
+
 .header {
   display: flex;
   width: 100%;
   height: 0.88rem;
   color: #fff;
-  background-color: #00bcd4;
+  background-color: $bgColor;
 }
 
 .header .header-left {
