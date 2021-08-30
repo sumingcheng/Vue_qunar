@@ -57,4 +57,6 @@
   .sw-wrapper .swiper-pagination {
     z-index: 10;
   }
+
+
 </style>
