@@ -122,12 +122,12 @@ export default {
 @import '~styles/variables.styl';
 @import '~styles/mixins.styl';
 
-
 .icon_wrapper {
   width: 100%;
   height: 0;
   padding-bottom: 50%;
   overflow: hidden;
+  margin: 0.2rem 0;
 }
 
 .icon_wrapper .icon_box {
@@ -147,8 +147,8 @@ export default {
 }
 
 .icon_wrapper .icon_box .icon_img_box .icon_img {
-  height: 90%;
   display: block;
+  height: 100%;
   margin: 0 auto;
 }
 

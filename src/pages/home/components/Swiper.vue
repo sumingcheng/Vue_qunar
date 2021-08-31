@@ -53,7 +53,5 @@
     height: 100%;
   }
 
-  .sw-wrapper .swiper-pagination {
-    z-index: 10;
-  }
+
 </style>

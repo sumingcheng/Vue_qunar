@@ -43,7 +43,7 @@ export default {
 .header .header-middle {
   position: relative;
   flex: 1;
-  margin: 0.14rem;
+  margin: 0.14rem 0;
 }
 
 .header .header-middle .search-icon {
@@ -67,9 +67,11 @@ export default {
 }
 
 .header .header-right {
-  width: 1.32rem;
-  height: 100%;
-  text-align: center;
-  line-height: 0.88rem;
+	min-width: 1.12rem;
+	padding: 0 .1rem;
+	height: 100%;
+	text-align: center;
+	line-height: .88rem;
+	color: #fff;
 }
 </style>
