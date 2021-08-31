@@ -20,7 +20,6 @@
         swiperOption: {
           pagination: ".swiper-pagination",
           loop: true,
-
         },
         swiperList: [{
             id: '001',
