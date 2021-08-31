@@ -9,11 +9,10 @@
         <div class="item_img">
           <img src="https://imgs.qunarzz.com/p/p48/201302/28/bc44faa497db0dcf93835fbb.jpg_256x160_0ba13461.jpg">
         </div>
+        <div class="item_img_tag">
+
+        </div>
         <div class="item_info">
-          <div class="inner_box">
-            <div class="info_title">橘子洲</div>
-            <div class="info_price"></div>
-          </div>
         </div>
       </li>
     </ul>
@@ -45,11 +44,10 @@
   }
 
   .list_item {
-    position:relative;
     display: flex;
     width: 100%;
     height: 2.4rem;
-    background-color :orange;
+    background-color: orange;
   }
 
   .list_item .item_img {
@@ -66,23 +64,16 @@
 
   }
 
-  .list_item .item_info .inner_box {
-    height: 100%;
-    width: 100%;
-    background-color: brown;
-    
+  .list_item  .item_img_tag {
+    width: 1.02rem;
+    height: 0.38rem;
+    background-color: pink;
+    background-image:url();
   }
-   .inner_box .info_title{
-    width: 100%;
-    height : 100%;
-    line-height:0.6rem;
-    font-size :.0.32;
-    }
 
   .list_item .item_info {
     flex: 1;
-    height: 2.4rem;
-    padding :4rem 0.1rem; 
+    background-color: blue;
 
   }
 </style>
