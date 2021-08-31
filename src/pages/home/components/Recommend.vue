@@ -1,5 +1,5 @@
 <template>
-  <div class="recommend_title">
+  <div class="title">
     <div>
       <span class="iconfont icon_heart">&#xe600;</span>
       猜你喜欢
@@ -7,7 +7,7 @@
     <ul>
       <router-link
         tag="li"
-        to="/detail"
+        to="/detail+ item.id"
         class="list_item"
         v-for="item in recommendList"
         :key="item.id"
@@ -96,7 +96,7 @@ export default {
 };
 </script>
 
-<style scoped lang="stylus">
+<style lang="stylus" scoped>
 @import '~styles/variables.styl';
 @import '~styles/mixins.styl';
 
@@ -105,7 +105,7 @@ div {
 }
 
 
-.recommend_title {
+.title {
   width: 100%;
   height: 0.8rem;
   line-height: 0.8rem;
@@ -160,7 +160,6 @@ div {
 .list_item .item_info .inner_box {
   width: 100%;
   height: 100%;
-  // background-color: brown;
 }
 
 .item_info .inner_box .info_title {
@@ -172,10 +171,10 @@ div {
 }
 
 .item_info .inner_box .info_comment {
-  width: 100%;
-  height: 0.4rem;
-  font-size: 0.24rem;
-  line-height: 0.4rem;
+	width: 100%;
+	height: .4rem;
+	line-height: .4rem;
+	font-size: .24rem;
 }
 
 .item_info .inner_box .info_comment .icon_star {
@@ -188,7 +187,7 @@ div {
 }
 
 .item_info .inner_box .info_price {
-  position: relative;
+	position: relative;
   width: 100%;
   height: 0.6rem;
   line-height: 0.6rem;
