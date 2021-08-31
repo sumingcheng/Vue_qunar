@@ -6,6 +6,13 @@
   "description": "qunar",
   "glyphs": [
     {
+      "icon_id": "21529822",
+      "name": "爱心",
+      "font_class": "xinaixin-fuben",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
       "icon_id": "3582972",
       "name": "下箭头",
       "font_class": "dowm",
