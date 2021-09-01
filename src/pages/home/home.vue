@@ -2,8 +2,8 @@
   <div>
     <!-- 动态传值给子组件 -->
     <home-header :city="city"></home-header>
-    <home-swiper></home-swiper>
-    <home-icons></home-icons>
+    <home-swiper :swiper-list="swiperList"></home-swiper>
+    <home-icons :icons-list="iconsList"></home-icons>
     <home-recommend></home-recommend>
     <home-weekend></home-weekend>
   </div>
@@ -26,9 +26,11 @@
       "home-recommend": HomeRecommend,
       "home-weekend": HomeWeekend,
     },
-    data:function(){
-      return{
-        city:''
+    data: function () {
+      return {
+        city: '',
+        swiperList: [],
+        iconsList: [],
       }
     },
     methods: {
@@ -38,9 +40,11 @@
           .then(this.getHomeInfoSuccess)
       },
       getHomeInfoSuccess: function (res) {
-        if(res.data.ret && res.data.data){
+        if (res.data.ret && res.data.data) {
           var data = res.data.data;
-          this.city=data.city;
+          this.city = data.city;
+          this.swiperList = data.swiperList;
+          this.iconsList = data.iconsList;
         }
         console.log(res);
       }
