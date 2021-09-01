@@ -9,23 +9,23 @@
 </template>
 
 <script>
-import HomeHeader from "./components/Header.vue";
-import HomeSwiper from "./components/Swiper.vue";
-import HomeIcons from "./components/Icons";
-import HomeRecommend from "./components/Recommend";
-import HomeWeekend from "./components/Weekend";
+  import HomeHeader from "./components/Header.vue";
+  import HomeSwiper from "./components/Swiper.vue";
+  import HomeIcons from "./components/Icons";
+  import HomeRecommend from "./components/Recommend";
+  import HomeWeekend from "./components/Weekend";
 
 
-export default {
-  name: "Home",
-  components: {
-    "home-header": HomeHeader,
-    "home-swiper": HomeSwiper,
-    "home-icons":HomeIcons,
-    "home-recommend":HomeRecommend,
-    "home-weekend":HomeWeekend,
-  },
-};
+  export default {
+    name: "Home",
+    components: {
+      "home-header": HomeHeader,
+      "home-swiper": HomeSwiper,
+      "home-icons": HomeIcons,
+      "home-recommend": HomeRecommend,
+      "home-weekend": HomeWeekend,
+    },
+  };
 </script>
 
 <style lang="stylus" scoped>

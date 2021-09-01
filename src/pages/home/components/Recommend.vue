@@ -1,6 +1,6 @@
 <template>
-  <div class="title">
-    <div>
+  <div class="recommend_title">
+    <div class="title">
       <span class="iconfont icon_heart">&#xe600;</span>
       猜你喜欢
     </div>
@@ -112,10 +112,12 @@ div {
   font-size: 0.32rem;
   background-color: #eee;
   padding: 0 0.2rem;
+  
 }
 
 .recommend_title .icon_heart {
   color: #FF4040;
+  
 }
 
 .list_item {
