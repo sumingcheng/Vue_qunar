@@ -76,7 +76,6 @@ div {
 .list_item .item_img {
   width: 100%;
   height: 0;
-  // background-color: green;
   padding-bottom: 4.2rem;
 }
 
