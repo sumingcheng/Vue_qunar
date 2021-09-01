@@ -1,6 +1,7 @@
 <template>
   <div>
-    <home-header></home-header>
+    <!-- 动态传值给子组件 -->
+    <home-header :city="city"></home-header>
     <home-swiper></home-swiper>
     <home-icons></home-icons>
     <home-recommend></home-recommend>
@@ -25,6 +26,11 @@
       "home-recommend": HomeRecommend,
       "home-weekend": HomeWeekend,
     },
+    data:function(){
+      return{
+        city:''
+      }
+    },
     methods: {
       getHomeInfo: function () {
         // Make a request for a user with a given ID
@@ -32,6 +38,10 @@
           .then(this.getHomeInfoSuccess)
       },
       getHomeInfoSuccess: function (res) {
+        if(res.data.ret && res.data.data){
+          var data = res.data.data;
+          this.city=data.city;
+        }
         console.log(res);
       }
     },

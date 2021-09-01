@@ -11,7 +11,7 @@
         type="text"
       />
     </div>
-    <div class="header-right">城市
+    <div class="header-right">{{this.city}}
       <span class="iconfont">&#xe673;</span>
     </div>
   </div>
@@ -19,6 +19,10 @@
 <script>
 export default {
   name: "Home-Header",
+  props: {
+    // 限定数据类型为 String, 传其他的会报错。
+    city: String,
+  },
 };
 </script>
 
@@ -67,11 +71,11 @@ export default {
 }
 
 .header .header-right {
-	min-width: 1.12rem;
-	padding: 0 .1rem;
-	height: 100%;
-	text-align: center;
-	line-height: .88rem;
-	color: #fff;
+  min-width: 1.12rem;
+  padding: 0 0.1rem;
+  height: 100%;
+  text-align: center;
+  line-height: 0.88rem;
+  color: #fff;
 }
 </style>

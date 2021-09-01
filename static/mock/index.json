@@ -1,6 +1,7 @@
 {
   "ret": true,
   "data": {
+    "city":"成都",
     "swiperList": [{
         "id": "0001",
         "imgUrl": "http://img1.qunarzz.com/piao/fusion/1808/5e/514ce60160e62602.jpg_750x200_9b0074e2.jpg"
