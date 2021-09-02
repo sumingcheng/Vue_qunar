@@ -5,13 +5,13 @@
     </div>
     <div class="header-middle">
       <span class="iconfont search-icon">&#xe632;</span>
-      <div class="kw">输入你想要的</div>
+      <div class="kw">输入城市/景点/酒店</div>
       <input
         class="header-input"
         type="text"
       />
     </div>
-    <div class="header-right">城市
+    <div class="header-right">{{this.city}}
       <span class="iconfont">&#xe673;</span>
     </div>
   </div>
@@ -19,6 +19,10 @@
 <script>
 export default {
   name: "Home-Header",
+  props: {
+    // 限定数据类型为 String, 传其他的会报错。
+    city: String,
+  },
 };
 </script>
 
@@ -43,7 +47,7 @@ export default {
 .header .header-middle {
   position: relative;
   flex: 1;
-  margin: 0.14rem;
+  margin: 0.14rem 0;
 }
 
 .header .header-middle .search-icon {
@@ -67,9 +71,11 @@ export default {
 }
 
 .header .header-right {
-  width: 1.32rem;
+  min-width: 1.12rem;
+  padding: 0 0.1rem;
   height: 100%;
   text-align: center;
   line-height: 0.88rem;
+  color: #fff;
 }
 </style>

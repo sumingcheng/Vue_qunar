@@ -8,7 +8,7 @@
         tag="li"
         to="/detail"
         class="list_item"
-        v-for="item in recommendList"
+        v-for="item in this.weekendList"
         :key="item.id"
       >
         <div class="item_img">
@@ -26,31 +26,12 @@
 <script>
 export default {
   name: "HomeWeekend",
+  props:{
+    weekendList:Array
+  },
   data: function () {
     return {
-      recommendList: [
-        {
-          id: "001",
-          imgUrl:
-            "https://tr-osdcp.qunarzz.com/tr-osd-tr-manager/img/9599ed40699b6a4072b79f0389ef71d9.jpg",
-          title: "旅游1",
-          comment: "描述性文字",
-        },
-        {
-          id: "002",
-          imgUrl:
-            "https://tr-osdcp.qunarzz.com/tr-osd-tr-manager/img/2a8d385e50c9a03f745b9cf768c13b65.jpg",
-          title: "旅游2",
-          comment: "描述性文字",
-        },
-        {
-          id: "003",
-          imgUrl:
-            "https://tr-osdcp.qunarzz.com/tr-osd-tr-manager/img/825ef6ebfc91809d50e98d23473cbabf.jpg",
-          title: "旅游3",
-          comment: "描述性文字",
-        },
-      ],
+      
     };
   },
 };
@@ -76,7 +57,11 @@ div {
 .list_item .item_img {
   width: 100%;
   height: 0;
+<<<<<<< HEAD
   padding-bottom: 4.2rem;
+=======
+  padding-bottom: 2.8rem;
+>>>>>>> origin/ajax
 }
 
 .list_item .item_img img {
