@@ -1,42 +1,16 @@
 <template>
   <div>
-<<<<<<< HEAD
-    <home-header></home-header>
-    <home-swiper></home-swiper>
-    <home-icons></home-icons>
-    <home-recommend></home-recommend>
-    <home-weekend></home-weekend>
-=======
+
     <!-- 动态传值给子组件 -->
     <home-header :city="city"></home-header>
     <home-swiper :swiper-list="swiperList"></home-swiper>
     <home-icons :icons-list="iconsList"></home-icons>
     <home-recommend :recommend-list="recommendList"></home-recommend>
-    <home-weekend :weekend-list ="weekendList"></home-weekend>
->>>>>>> origin/ajax
+    <home-weekend :weekend-list="weekendList"></home-weekend>
   </div>
 </template>
 
 <script>
-<<<<<<< HEAD
-  import HomeHeader from "./components/Header.vue";
-  import HomeSwiper from "./components/Swiper.vue";
-  import HomeIcons from "./components/Icons";
-  import HomeRecommend from "./components/Recommend";
-  import HomeWeekend from "./components/Weekend";
-
-
-  export default {
-    name: "Home",
-    components: {
-      "home-header": HomeHeader,
-      "home-swiper": HomeSwiper,
-      "home-icons": HomeIcons,
-      "home-recommend": HomeRecommend,
-      "home-weekend": HomeWeekend,
-    },
-  };
-=======
 import HomeHeader from "./components/Header.vue";
 import HomeSwiper from "./components/Swiper.vue";
 import HomeIcons from "./components/Icons";
@@ -75,7 +49,6 @@ export default {
         this.iconsList = data.iconsList;
         this.recommendList = data.recommendList;
         this.weekendList = data.weekendList;
-        
       }
       console.log(res);
     },
@@ -84,7 +57,6 @@ export default {
     this.getHomeInfo();
   },
 };
->>>>>>> origin/ajax
 </script>
 
 <style lang="stylus" scoped></style>
