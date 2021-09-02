@@ -9,7 +9,7 @@
         tag="li"
         to="/detail+ item.id"
         class="list_item"
-        v-for="item in recommendList"
+        v-for="item in this.recommendList"
         :key="item.id"
       >
         <div class="item_img">
@@ -37,60 +37,12 @@
 <script>
 export default {
   name: "HomeCommend",
+  props:{
+    recommendList: Array
+  },
   data: function () {
     return {
-      recommendList: [
-        {
-          id: "001",
-          imgUrl:
-            "https://imgs.qunarzz.com/p/p48/201302/28/bc44faa497db0dcf93835fbb.jpg_256x160_0ba13461.jpg",
-          tag: "可定今日",
-          title: "橘子洲",
-          commentNum: "2754",
-          price: "128",
-          district: "朝阳区",
-        },
-        {
-          id: "002",
-          imgUrl:
-            "https://imgs.qunarzz.com/p/p67/1512/a2/0ebfcd965b9391f7.jpg_256x160_04d5813d.jpg",
-          tag: "可定今日",
-          title: "北海公园",
-          commentNum: "8797",
-          price: "128",
-          district: "通州区",
-        },
-        {
-          id: "003",
-          imgUrl:
-            "https://img1.qunarzz.com/sight/p0/1505/3c/3c760c67b7cd23a6.water.jpg_256x160_276d573d.jpg",
-          tag: "可定今日",
-          title: "苏州乐园",
-          commentNum: "798",
-          price: "33",
-          district: "长安区",
-        },
-        {
-          id: "004",
-          imgUrl:
-            "https://imgs.qunarzz.com/p/p70/1809/e7/4941057a6aae702.jpg_256x160_9fee6ccb.jpg",
-          tag: "可定今日",
-          title: "国际中心",
-          commentNum: "1233",
-          price: "67",
-          district: "国际度假中心",
-        },
-        {
-          id: "005",
-          imgUrl:
-            "https://img1.qunarzz.com/sight/p0/201309/06/a03726324b885c8bc8d65eac.jpg_256x160_1cb9efd5.jpg",
-          tag: "可定今日",
-          title: "望京",
-          commentNum: "23432",
-          price: "345",
-          district: "望京公园",
-        },
-      ],
+
     };
   },
 };
