@@ -57,11 +57,7 @@ div {
 .list_item .item_img {
   width: 100%;
   height: 0;
-<<<<<<< HEAD
-  padding-bottom: 4.2rem;
-=======
   padding-bottom: 2.8rem;
->>>>>>> origin/ajax
 }
 
 .list_item .item_img img {
