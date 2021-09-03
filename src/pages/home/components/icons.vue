@@ -78,7 +78,7 @@ export default {
 
 .icons-wrapper .icon-box .icon-img-box .icon-img {
   display: block;
-  height: 100%;
+  height: 90%;
   margin: 0 auto;
 }
 
