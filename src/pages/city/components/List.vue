@@ -117,7 +117,6 @@ div {
   padding: 0 0.2rem;
   font-size: 0.26rem;
   color: $darkTxtColor;
-  background-color: pink;
   padding: 0 0.2rem;
 }
 
