@@ -8,7 +8,7 @@
         tag="li"
         to="/detail"
         class="list_item"
-        v-for="item in this.weekendList"
+        v-for="item in weekendList"
         :key="item.id"
       >
         <div class="item_img">

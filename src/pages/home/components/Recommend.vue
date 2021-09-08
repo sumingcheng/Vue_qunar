@@ -9,7 +9,7 @@
         tag="li"
         to="/detail+ item.id"
         class="list_item"
-        v-for="item in this.recommendList"
+        v-for="item in recommendList"
         :key="item.id"
       >
         <div class="item_img">
