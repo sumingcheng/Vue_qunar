@@ -12,7 +12,7 @@
       />
     </div>
     <router-link to="/city">
-      <div class="header-right">{{this.city}}
+      <div class="header-right">{{ this.$store.state.city }}
         <span class="iconfont">&#xe673;</span>
       </div>
     </router-link>
@@ -49,7 +49,7 @@ export default {
 .header .header-middle {
   position: relative;
   flex: 1;
-  margin: 0.14rem  0;
+  margin: 0.14rem 0;
 }
 
 .header .header-middle .search-icon {

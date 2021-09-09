@@ -2,7 +2,7 @@
   <div>
 
     <!-- 动态传值给子组件 -->
-    <home-header :city="city"></home-header>
+    <home-header ></home-header>
     <home-swiper :swiper-list="swiperList"></home-swiper>
     <home-icons :icons-list="iconsList"></home-icons>
     <home-recommend :recommend-list="recommendList"></home-recommend>
@@ -29,7 +29,7 @@ export default {
   },
   data: function () {
     return {
-      city: "",
+      
       swiperList: [],
       iconsList: [],
       recommendList: [],
@@ -44,7 +44,6 @@ export default {
     getHomeInfoSuccess: function (res) {
       if (res.data.ret && res.data.data) {
         var data = res.data.data;
-        this.city = data.city;
         this.swiperList = data.swiperList;
         this.iconsList = data.iconsList;
         this.recommendList = data.recommendList;
