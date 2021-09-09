@@ -1,12 +1,16 @@
 <template>
   <div>
     <city-header></city-header>
-    <city-list></city-list>
+    <city-list
+      :hot-cities="hotCities"
+      :cities="cities"
+    ></city-list>
   </div>
 </template>
 
 <script>
 import axios from "axios";
+// 发送AJAX的工具
 import CityHeader from "./components/Header";
 import CityList from "./components/List";
 
@@ -17,16 +21,19 @@ export default {
     "city-list": CityList,
   },
   data: function () {
-    return{
-      hotcities:[],
-    }
+    return {
+      hotCities: [],
+      cities: {},
+    };
   },
   methods: {
     getCityInfo: function () {
       axios.get("/api/city.json").then(this.getCityInfoSuccess);
     },
     getCityInfoSuccess: function (res) {
-      console.log(res);
+      var data = res.data.data;
+      this.hotCities = data.hotCities;
+      this.cities = data.cities;
     },
   },
   mounted: function () {
