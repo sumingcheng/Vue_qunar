@@ -65,37 +65,9 @@
           <li>阿联酋</li>
           <li>阿联酋</li>
         </ul>
-        <div class="alphabet-list-title">B</div>
-        <ul class="clearfix">
-          <li>阿联酋</li>
-          <li>阿联酋</li>
-          <li>阿联酋</li>
-          <li>阿联酋</li>
-          <li>阿联酋</li>
-          <li>阿联酋</li>
-          <li>阿联酋</li>
-          <li>阿联酋</li>
-          <li>阿联酋</li>
-          <li>阿联酋</li>
-          <li>阿联酋</li>
-          <li>阿联酋</li>
-        </ul>
-        <div class="alphabet-list-title">C</div>
-        <ul class="clearfix">
-          <li>阿联酋</li>
-          <li>阿联酋</li>
-          <li>阿联酋</li>
-          <li>阿联酋</li>
-          <li>阿联酋</li>
-          <li>阿联酋</li>
-          <li>阿联酋</li>
-          <li>阿联酋</li>
-          <li>阿联酋</li>
-          <li>阿联酋</li>
-          <li>阿联酋</li>
-          <li>阿联酋</li>
-        </ul>
+        
       </div>
+      
       
     </div>
   </div>
@@ -135,8 +107,8 @@ div {
 
 .hot-cities .hot-cts-title, .alphabet-menu .alphabet-menu-title, .aplhabet-list .alphabet-list-title {
   padding: 0 0.2rem;
-  width: 100%;
-  height: 0.72rem;
+  width : 100%;
+  height : 0.72rem;
   line-height: 0.72rem;
   background-color: #F5F5F5;
 }
@@ -155,7 +127,6 @@ div {
   float: left;
   width: 33.33%;
   height: 0.9rem;
-  background-color: lightblue;
   line-height: 0.9rem;
   text-align: center;
 }
@@ -180,4 +151,5 @@ div {
   line-height: 0.9rem;
   text-align: center;
 }
+
 </style>

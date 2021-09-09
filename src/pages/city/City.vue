@@ -6,6 +6,7 @@
 </template>
 
 <script>
+import axios from "axios";
 import CityHeader from "./components/Header";
 import CityList from "./components/List";
 
@@ -14,6 +15,22 @@ export default {
   components: {
     "city-header": CityHeader,
     "city-list": CityList,
+  },
+  data: function () {
+    return{
+      hotcities:[],
+    }
+  },
+  methods: {
+    getCityInfo: function () {
+      axios.get("/api/city.json").then(this.getCityInfoSuccess);
+    },
+    getCityInfoSuccess: function (res) {
+      console.log(res);
+    },
+  },
+  mounted: function () {
+    this.getCityInfo();
   },
 };
 </script>
