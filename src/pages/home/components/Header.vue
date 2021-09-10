@@ -59,6 +59,7 @@ export default {
   position: absolute;
   top: 0.13rem;
   left: 0.2rem;
+
   color: #e4e7ea;
 }
 

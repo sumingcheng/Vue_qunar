@@ -1,8 +1,7 @@
 <template>
   <div>
-
     <!-- 动态传值给子组件 -->
-    <home-header ></home-header>
+    <home-header></home-header>
     <home-swiper :swiper-list="swiperList"></home-swiper>
     <home-icons :icons-list="iconsList"></home-icons>
     <home-recommend :recommend-list="recommendList"></home-recommend>
@@ -17,6 +16,7 @@ import HomeIcons from "./components/Icons";
 import HomeRecommend from "./components/Recommend";
 import HomeWeekend from "./components/Weekend";
 import axios from "axios";
+import { mapState } from "vuex";
 
 export default {
   name: "Home",
@@ -27,9 +27,14 @@ export default {
     "home-recommend": HomeRecommend,
     "home-weekend": HomeWeekend,
   },
+  computed: {
+    ...mapState({
+      curCity: "city",
+    }),
+  },
   data: function () {
     return {
-      
+      lastCity: "",
       swiperList: [],
       iconsList: [],
       recommendList: [],
@@ -39,7 +44,9 @@ export default {
   methods: {
     getHomeInfo: function () {
       // Make a request for a user with a given ID
-      axios.get("/api/index.json").then(this.getHomeInfoSuccess);
+      axios
+        .get("/api/index.json?city=" + this.curCity)
+        .then(this.getHomeInfoSuccess);
     },
     getHomeInfoSuccess: function (res) {
       if (res.data.ret && res.data.data) {
@@ -53,8 +60,16 @@ export default {
     },
   },
   mounted: function () {
+    this.lastCity = this.curCity;
     this.getHomeInfo();
   },
+  activated: function () {
+    if (this.lastCity !== this.curCity) {
+      this.lastCity = this.curCity;
+      this.getHomeInfo();
+    }
+  },
+  deactivated: function () {},
 };
 </script>
 
