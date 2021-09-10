@@ -12,19 +12,22 @@
       />
     </div>
     <router-link to="/city">
-      <div class="header-right">{{ this.$store.state.city }}
+      <div class="header-right">
+        {{ this.city }}
         <span class="iconfont">&#xe673;</span>
       </div>
     </router-link>
   </div>
 </template>
 <script>
+import { mapState } from "vuex";
+
 export default {
   name: "Home-Header",
-  props: {
-    // 限定数据类型为 String, 传其他的会报错。
-    city: String,
-  },
+
+  computed: mapState({
+    city: "city",
+  }),
 };
 </script>
 
